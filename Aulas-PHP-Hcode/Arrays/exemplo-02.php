@@ -13,7 +13,7 @@ $carros[1][3] = "Eco Sport";
 echo $carros[0][3];
 
 echo end($carros[1]);
-//a funão END mostra o ultimo array
+//a função END mostra o ultimo array
 //o que foi impresso foi Eco sport
 
 ?>

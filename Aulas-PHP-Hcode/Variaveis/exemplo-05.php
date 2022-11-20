@@ -4,7 +4,8 @@ $nome = "Diego";
 
 function teste(){
     //escopo
-    global $nome; //A palavra reservada global pode chamar variaveis fora do escopo
+    global $nome; 
+    //A palavra reservada global pode chamar variaveis fora do escopo
     echo $nome; 
 }
 
