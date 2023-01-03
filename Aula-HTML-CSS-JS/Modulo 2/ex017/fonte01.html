@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            medidas absotultas
+            cm, mm, in(polegada),px, pt(ponto), pc(paica)
+            
+            medidas relativas
+            em, ex, rem, vw, vh, %
+
+            16px geralmente é igual a 1em
+            obs: Recomendação da w3c. Utilizar px e em
+
+            */
+            font-size: 1em;
+        }
+
+        h1{
+            /* o que vai ser utilizado a serguir chamasse Shorthand font ou melhor dizendo, uma "mãozinha"
+
+            ao invés de utilizar os códigos abaixo, podemos colocar tudo em uma só linha. A regra do shorthand font segue o seguinte parametro:
+
+            font-style (se quer italic) -> 
+            font-weigth(peso ou se quer mais negrito ou não de uma fonte) -> 
+            font-size(tamanho da fonte) ->
+            font-family(qual fonte utilizar)
+            
+            ex:
+            ordem abaixo: 
+           1 - font-style: italic;
+           2 - font-weigth: bolder; (negrito)
+           3 - font-size: 3em; (tamanho)
+           4 - font-family: 'Arial';           
+            
+            abaixo será aplicado direto no css com a regra.
+            */
+            
+            font: italic bolder 3em 'Courier New', Courier, monospace;
+
+        }
+
+        h2{
+            font: bold 2em 'Courier New', Courier, monospace;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolor mollitia repellat optio ipsam, voluptatum ducimus sapiente dolorem quaerat explicabo impedit veniam unde eius qui sunt perspiciatis quia eligendi molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse, consectetur iusto neque accusamus dolores vitae alias pariatur fugiat accusantium, reiciendis voluptatibus? Voluptas laboriosam in enim magnam excepturi illum quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, rerum dolore possimus consequatur a eaque ducimus provident accusamus distinctio fugit eius esse sit amet assumenda facilis voluptates ipsa tempora eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ratione consequatur culpa, modi quibusdam sapiente odio ab praesentium? Ratione dolores iste labore repellendus autem molestiae possimus quos aut ad ipsum.</p>
+    <h2>subtitulo do exercicio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed sint dolore animi quis suscipit reprehenderit ad, similique aspernatur rem asperiores libero temporibus minima cupiditate laudantium perspiciatis assumenda aliquid nisi maxime?</p>
+    
+</body>
+</html>

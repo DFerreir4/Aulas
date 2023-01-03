@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídeas em HTML5</title>
+</head>
+<body>
+
+<h1>Imagem dinâmica</h1>
+<p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+    <img src="img/foto-g.png" alt="imagem flexível">
+</picture>
+
+<!--
+Hoje utilizamos a tag <picture> parece uma imagem e permite que você crie vários <sorce>, varias imagens. Qual a ideia? caso a tela do usuário mude a imagem vai estar conforme o tamanho da tela. no atributo media="" você define o limete da imagem e caso chegue nesse limite, outra imagem é carregada. Conforme o tamanho da tela.
+
+    obs: Ficar atento caso exiba a barra de rolagem quando diminuir a tela do navegador. Caso isso aconteça aumente a quantidade de px no max-width
+
+    obs2: existe uma ordem a ser seguida das tags source. Sempre do menor para o maior na quantidade pixels
+-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio src="midia/Explosion with Metal Debris.m3" controls autoplay>teste</audio>
+
+    <!-- outra forma de utilizar o audio porque o autoplay não funcionou. Possa ser que seja por conta do navegador.-->
+
+    <audio>
+        <source src="midia/Explosion with Metal Debris.mp3" type="audio/mpeg">
+    </audio>
+
+    
+</body>
+</html>
